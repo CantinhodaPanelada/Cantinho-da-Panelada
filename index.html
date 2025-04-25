@@ -1,43 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-image: url('https://images.unsplash.com/photo-1600891965050-6f3e3d43a1ab');
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-    }
-    .overlay {
-      background-color: rgba(255, 255, 255, 0.88);
-    }
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-    }
-    .cardapio-bg {
-      background-image: url('https://static.wixstatic.com/media/653c31_2b0a0e87362543f1828108ee5e6badd5.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  </style>
-</head>
-<body class="text-gray-900">
- 
-</body>
-
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cantinho da Panelada | Panelada e Feijoada em Sobral</title>
   <meta name="description" content="Panelada e feijoada deliciosas em Sobral, CE. Sabor nordestino de verdade!"/>
   <meta name="keywords" content="panelada, feijoada, restaurante sobral, comida nordestina, cantinho da panelada"/>
   <meta name="author" content="Cantinho da Panelada" />
-
+  
   <!-- Open Graph (para redes sociais) -->
   <meta property="og:title" content="Cantinho da Panelada" />
   <meta property="og:description" content="A melhor panelada e feijoada de Sobral, CE!" />
@@ -53,21 +23,57 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 
   <style>
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
-      background-image: url('https://images.unsplash.com/photo-1600891965050-6f3e3d43a1ab');
+      /* Degradê no fundo */
+      background: linear-gradient(to right, #facc15, #f97316, #ef4444); /* Amarelo → Laranja → Vermelho */
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
+      position: relative;
     }
-    .overlay { background-color: rgba(255, 255, 255, 0.92); }
-    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom right, rgba(255,235,200,0.85), rgba(255,200,150,0.8));
+      z-index: -1;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.92);
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
     .cardapio-bg {
       background-image: url('https://static.wixstatic.com/media/653c31_2b0a0e87362543f1828108ee5e6badd5.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+    }
+
+    /* Cabeçalho com degradê */
+    header {
+      background: linear-gradient(to right, #facc15, #f97316, #ef4444); /* amarelo → laranja → vermelho */
+      color: white;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      transition: all 0.3s ease;
     }
   </style>
 </head>
@@ -159,25 +165,17 @@
     </section>
 
     <footer id="contato" class="bg-gray-900 text-white py-16 px-4">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl mb-6">Fale Conosco</h2>
-    <form action="https://formsubmit.co/seuemail@email.com" method="POST" class="space-y-4 text-left max-w-lg mx-auto">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="nome" placeholder="Seu nome" required class="w-full p-3 rounded bg-white text-black placeholder-gray-600" />
-      <input type="tel" name="telefone" placeholder="Seu telefone ou WhatsApp" class="w-full p-3 rounded bg-white text-black placeholder-gray-600" />
-      <textarea name="mensagem" rows="4" placeholder="Sua mensagem" required class="w-full p-3 rounded bg-white text-black placeholder-gray-600"></textarea>
-      <button type="submit" class="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-2 px-6 rounded-lg transition">Enviar</button>
-    </form>
-    <div class="mt-8 space-y-1 text-sm">
-      <p><strong>Endereço:</strong> R. Vinte e Três de Setembro, 233 - Centro, Sobral - CE</p>
-      <p><strong>WhatsApp:</strong> (88) 9.9302-6518</p>
-      <p><strong>Instagram:</strong> @CantinhodaPanelada</p>
-      <p><strong>Email:</strong> cantinhoodapanelada@gmail.com</p>
-    </div>
-  </div>
-</footer>
-
-
+      <div class="max-w-4xl mx-auto text-center">
+       
+        
+        <div class="mt-8 space-y-1 text-sm">
+          <p><strong>Endereço:</strong> R. Vinte e Três de Setembro, 233 - Centro, Sobral - CE</p>
+          <p><strong>WhatsApp:</strong> (88) 9.9302-6518</p>
+          <p><strong>Instagram:</strong> @CantinhodaPanelada</p>
+          <p><strong>Email:</strong> cantinhoodapanelada@gmail.com</p>
+        </div>
+      </div>
+    </footer>
     <a href="https://wa.me/558893026518?text=Olá%21%20Quero%20fazer%20um%20pedido%20no%20Cantinho%20da%20Panelada" 
        class="fixed bottom-5 right-5 flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-full shadow-xl z-50 transition-transform transform hover:scale-105 animate-bounce"
        target="_blank" 
