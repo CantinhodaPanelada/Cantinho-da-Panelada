@@ -1,12 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cantinho da Panelada</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+<head>
   <style>
     html {
       scroll-behavior: smooth;
@@ -25,7 +19,7 @@
       font-family: 'Playfair Display', serif;
     }
     .cardapio-bg {
-      background-image: url('https://static.wixstatic.com/media/653c31_2b0a0e87362543f1828108ee5e6badd5.jpg/v1/fill/w_1469,h_971,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/653c31_2b0a0e87362543f1828108ee5e6badd5.jpg');
+      background-image: url('https://static.wixstatic.com/media/653c31_2b0a0e87362543f1828108ee5e6badd5.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -33,11 +27,57 @@
   </style>
 </head>
 <body class="text-gray-900">
-  <header class="bg-yellow-500 text-white py-6 shadow-xl">
+ 
+</body>
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cantinho da Panelada | Panelada e Feijoada em Sobral</title>
+  <meta name="description" content="Panelada e feijoada deliciosas em Sobral, CE. Sabor nordestino de verdade!"/>
+  <meta name="keywords" content="panelada, feijoada, restaurante sobral, comida nordestina, cantinho da panelada"/>
+  <meta name="author" content="Cantinho da Panelada" />
+
+  <!-- Open Graph (para redes sociais) -->
+  <meta property="og:title" content="Cantinho da Panelada" />
+  <meta property="og:description" content="A melhor panelada e feijoada de Sobral, CE!" />
+  <meta property="og:image" content="https://seusite.com/imagem-compartilhamento.jpg" />
+  <meta property="og:url" content="https://seusite.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts e Tailwind -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1600891965050-6f3e3d43a1ab');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    .overlay { background-color: rgba(255, 255, 255, 0.92); }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .cardapio-bg {
+      background-image: url('https://static.wixstatic.com/media/653c31_2b0a0e87362543f1828108ee5e6badd5.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body class="text-gray-900">
+  <header class="bg-yellow-600 text-white py-6 shadow-lg sticky top-0 z-50">
     <div class="max-w-6xl mx-auto text-center px-4">
-      <h1 class="text-4xl sm:text-5xl font-bold">Cantinho da Panelada</h1>
+      <h1 class="text-3xl sm:text-5xl font-bold">Cantinho da Panelada</h1>
       <nav class="mt-4">
-        <ul class="flex flex-wrap justify-center gap-4 text-lg font-medium">
+        <ul class="flex flex-wrap justify-center gap-6 text-base sm:text-lg font-medium">
           <li><a href="#sobre" class="hover:underline">Sobre</a></li>
           <li><a href="#cardapio" class="hover:underline">Cardápio</a></li>
           <li><a href="#galeria" class="hover:underline">Galeria</a></li>
@@ -51,20 +91,23 @@
   <main class="overlay">
     <section id="sobre" class="max-w-5xl mx-auto px-4 py-16 text-center">
       <h2 class="text-4xl text-red-700 mb-6">Sobre Nós</h2>
-      <p class="text-xl">O Cantinho da Panelada é um lugar especial onde tradição e sabor se encontram. Com receitas caseiras e aquele tempero nordestino que conquista corações, servimos a melhor panelada da cidade!<br /><br />Funcionamos aos sábados e domingos das 11h às 16h.</p>
+      <p class="text-lg sm:text-xl leading-relaxed">
+        O Cantinho da Panelada é um lugar especial onde tradição e sabor se encontram. Com receitas caseiras e aquele tempero nordestino que conquista corações, servimos a melhor panelada da cidade!
+        <br /><br />Funcionamos aos <strong>sábados e domingos das 11h às 16h</strong>.
+      </p>
     </section>
 
     <section id="cardapio" class="cardapio-bg w-full px-4 py-16">
-      <div class="bg-white bg-opacity-85 rounded-xl p-6 max-w-3xl mx-auto">
+      <div class="bg-white bg-opacity-90 rounded-2xl p-8 max-w-3xl mx-auto shadow-xl">
         <h2 class="text-4xl text-red-700 mb-6 text-center">Nosso Cardápio</h2>
-        <ul class="space-y-4 text-xl text-center text-gray-900">
+        <ul class="space-y-4 text-lg sm:text-xl text-center text-gray-900">
           <li><strong>Panelada completa</strong> - R$ 30,00 <br><span class="text-sm">Acompanha arroz branco e farofa.</span></li>
           <li><strong>Panelada simples</strong> - R$ 25,00 <br><span class="text-sm">Acompanha farofa.</span></li>
           <li><strong>Feijoada completa</strong> - R$ 22,00 <br><span class="text-sm">Acompanha arroz branco e farofinha.</span></li>
           <li><strong>Feijoada simples</strong> - R$ 18,00 <br><span class="text-sm">Acompanha farofinha.</span></li>
         </ul>
         <h3 class="text-3xl text-red-700 mt-10 mb-4 text-center">Bebidas</h3>
-        <ul class="space-y-2 text-xl text-center text-gray-900">
+        <ul class="space-y-2 text-lg sm:text-xl text-center text-gray-900">
           <li><strong>Coca-Cola (600ml)</strong> - R$ 8,00</li>
           <li><strong>Coca-Cola (1L)</strong> - R$ 9,50</li>
           <li><strong>Coca-Cola Zero (600ml)</strong> - R$ 8,00</li>
@@ -78,11 +121,11 @@
     </section>
 
     <section id="galeria" class="max-w-6xl mx-auto px-4 py-16">
-      <h2 class="text-4xl text-red-700 mb-6 text-center">Galeria</h2>
+      <h2 class="text-4xl text-red-700 mb-8 text-center">Galeria</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <img src="feijoada.JPG" alt="Imagem Feijoada" class="rounded-2xl shadow-lg object-cover w-full aspect-video hover:scale-105 transition-transform duration-300"/>
-        <img src="cantinho da panelada.jpg" alt="Imagem Restaurante" class="rounded-2xl shadow-lg object-cover w-full aspect-video hover:scale-105 transition-transform duration-300"/>
-        <img src="panelada.jpg" alt="Imagem Panelada" class="rounded-2xl shadow-lg object-cover w-full aspect-video hover:scale-105 transition-transform duration-300"/>
+        <img src="feijoada.JPG" alt="Imagem Feijoada" class="rounded-2xl shadow-lg object-cover w-full aspect-video hover:scale-105 transition duration-300" />
+        <img src="cantinho da panelada.jpg" alt="Imagem Restaurante" class="rounded-2xl shadow-lg object-cover w-full aspect-video hover:scale-105 transition duration-300" />
+        <img src="panelada.jpg" alt="Imagem Panelada" class="rounded-2xl shadow-lg object-cover w-full aspect-video hover:scale-105 transition duration-300" />
       </div>
     </section>
 
@@ -90,11 +133,11 @@
       <div class="max-w-5xl mx-auto px-4">
         <h2 class="text-4xl text-red-700 mb-8 text-center">Depoimentos</h2>
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-white p-6 rounded-xl shadow">
+          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition duration-300">
             <p class="italic">"A melhor panelada que já comi na vida! Atendimento excelente."</p>
             <p class="text-sm mt-2 text-gray-600">&ndash; João Silva</p>
           </div>
-          <div class="bg-white p-6 rounded-xl shadow">
+          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition duration-300">
             <p class="italic">"Sempre volto aqui. É comida de verdade, com gosto de casa!"</p>
             <p class="text-sm mt-2 text-gray-600">&ndash; Maria Oliveira</p>
           </div>
@@ -104,26 +147,39 @@
 
     <section class="max-w-6xl mx-auto px-4 py-16">
       <h2 class="text-4xl text-red-700 mb-6 text-center">Onde estamos</h2>
-      <iframe 
-        src="https://www.google.com/maps?q=-3.691323839975702,-40.34660690627151&hl=pt-BR&z=18&output=embed" 
-        class="w-full h-80 border-0 rounded-xl shadow-lg" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps?q=-3.691323839975702,-40.34660690627151&hl=pt-BR&z=18&output=embed" 
+          class="w-full h-80 border-0" 
+          allowfullscreen 
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </section>
 
-    <footer id="contato" class="bg-gray-900 text-white py-10">
-      <div class="max-w-4xl mx-auto text-center space-y-2 px-4 text-sm sm:text-base">
-        <p><strong>Endereço:</strong> R. Vinte e Três de Setembro, 233 - Centro, Sobral - CE</p>
-        <p><strong>WhatsApp:</strong> (88) 9.9302-6518</p>
-        <p><strong>Instagram:</strong> @CantinhodaPanelada</p>
-        <p><strong>Email:</strong> cantinhoodapanelada@gmail.com</p>
-      </div>
-    </footer>
+    <footer id="contato" class="bg-gray-900 text-white py-16 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl mb-6">Fale Conosco</h2>
+    <form action="https://formsubmit.co/seuemail@email.com" method="POST" class="space-y-4 text-left max-w-lg mx-auto">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="nome" placeholder="Seu nome" required class="w-full p-3 rounded bg-white text-black placeholder-gray-600" />
+      <input type="tel" name="telefone" placeholder="Seu telefone ou WhatsApp" class="w-full p-3 rounded bg-white text-black placeholder-gray-600" />
+      <textarea name="mensagem" rows="4" placeholder="Sua mensagem" required class="w-full p-3 rounded bg-white text-black placeholder-gray-600"></textarea>
+      <button type="submit" class="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-2 px-6 rounded-lg transition">Enviar</button>
+    </form>
+    <div class="mt-8 space-y-1 text-sm">
+      <p><strong>Endereço:</strong> R. Vinte e Três de Setembro, 233 - Centro, Sobral - CE</p>
+      <p><strong>WhatsApp:</strong> (88) 9.9302-6518</p>
+      <p><strong>Instagram:</strong> @CantinhodaPanelada</p>
+      <p><strong>Email:</strong> cantinhoodapanelada@gmail.com</p>
+    </div>
+  </div>
+</footer>
+
 
     <a href="https://wa.me/558893026518?text=Olá%21%20Quero%20fazer%20um%20pedido%20no%20Cantinho%20da%20Panelada" 
-       class="fixed bottom-5 right-5 flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-full shadow-xl z-50 transition-transform transform hover:scale-105 animate-pulse"
+       class="fixed bottom-5 right-5 flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-full shadow-xl z-50 transition-transform transform hover:scale-105 animate-bounce"
        target="_blank" 
        rel="noopener"
        aria-label="Fale conosco pelo WhatsApp">
